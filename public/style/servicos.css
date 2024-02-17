@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Zerando CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Fundo-tela */
+
+.corpo-servicos {
+    height: 100vh;
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(../IMG/SERVICOS.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Menu - Quem Somos */
+
+.servicos{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 20%px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.sobre_mim{
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+}
+
+
+  /* Transição de Pagg*/
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}

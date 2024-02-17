@@ -1,0 +1,95 @@
+<head>
+    <link rel="stylesheet" href="/style/usuarioCad.css">
+</head>
+<body class="corpo">
+<div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_shopping_re_3wst.svg" alt="">
+        </div>
+        <div class="main-form">
+            <form action="/loginUserAfterCad" method="post">
+                <div class="form-header">
+                        <h1>Cadastre-se</h1>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome:</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="number">Celular:</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="data">Data de Nascimento:</label>
+                        <input id="date" type="date" name="data" placeholder="00/00/0000" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cpf">CPF:</label>
+                        <input id="Cpf" type="text" name="CPF" placeholder="000.000.000-00" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="placaCarro">Placa do Carro:</label>
+                        <input id="Carro" type="text" name="Placa" placeholder="AAA-0000" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="modeloCarro">Modelo do Carro:</label>
+                        <select class="fake-sel" id="resposta" name="resposta">
+                            <option value=""></option>
+                            <option value="Sedã">Sedã</option>
+                            <option value="Hatchback">Hatchback</option>
+                            <option value="SUV">SUV</option>
+                            <option value="opcao2">Crossover</option>
+                            <option value="opcao3">Coupe</option>
+                            <option value="opcao1">Conversível</option>
+                            <option value="opcao2">Minivan</option>
+                            <option value="opcao3">Picape</option>
+                            <option value="opcao1">Carro esportivo</option>
+                            <option value="opcao2">Carro de luxo</option>
+                            <option value="opcao3">Carro elétrico</option>
+                            <option value="opcao1">Carro híbrido</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha:</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha:</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                    </div>
+                </div>
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero:</h6>
+                    </div>
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button type="submit">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

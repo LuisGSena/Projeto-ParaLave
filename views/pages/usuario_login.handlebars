@@ -1,0 +1,87 @@
+<head>
+<title>Cadastro do usuario</title>
+<link rel="stylesheet" href="/style/usuario_login.css">
+ <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const error = urlParams.get("error");
+
+    if (error) {
+      alert(error);
+    }
+  </script>
+</head>
+<body class="corpo-login-user">
+<main id="container">
+        <form id="login_form" method="post" action="/loginsuccessuser">
+            <!-- FORM HEADER -->
+            <div id="form_header">
+                <h1>Login</h1>
+            </div>
+
+            <!-- SOCIAL MEDIA LINKS -->
+            <div id="social_media">
+
+                <!-- FACEBOOK -->
+                <a href="#">
+                    <img src="../IMG/FACEBOOK.png" alt="Facebook">
+                </a>
+
+                <!-- GOOGLE -->
+                <a href="/google">
+                    <img src="../IMG/GOOGLE.png" alt="Google">
+                </a>
+                
+                <!-- GITHUB -->
+                <a href="#">
+                    <img src="../IMG/GITHUB.png" alt="Github">
+                </a>
+            </div>
+
+            <!-- INPUTS -->
+            <div id="inputs">
+                <!-- NAME -->
+                <div class="input-box">
+                    <label for="name">
+                        Nome
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- EMAIL -->
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- PASSWORD -->
+                <div class="input-box">
+                    <label for="password">
+                        Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+                    
+                    <!-- FORGOT PASSWORD -->
+                    <div id="forgot_password">
+                        <a href="/cadastroUsuario">Cadastre-se</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGIN BUTTON -->
+            <button type="submit" id="login_button">
+                Login
+            </button>
+        </form>
+    </main>
+</body>

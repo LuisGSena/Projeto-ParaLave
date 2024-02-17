@@ -1,0 +1,16 @@
+<head>
+    <link rel="stylesheet" href="/style/qrcode.css">
+</head>
+<main class="main">
+        <!--==================== HOME ====================-->
+        <section class="qrcode__section section"></section>
+        <div class="container">
+            <h1 class="qrcode__titulo">Seu agendamento foi confirmado, as informações estão salvas nesse QRCode:</h1>
+            <div class="qrcode__div" id="qrcode"></div>
+        </div>
+        <script src="/js/qrcode.min.js"></script>
+        <script>
+            new QRCode(document.getElementById('qrcode'),  'https://www.instagram.com/djwestn/')
+        </script>
+
+</main>

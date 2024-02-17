@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.corpo-plano{
+  font-family: "Exo", sans-serif;
+  background:linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(../IMG/PLANO.jpg);
+  background-size: cover;
+}
+button {
+  text-decoration: none;
+  color: #555;
+}
+
+h1{
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+.container-pricing {
+  font-size: 2em;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+  width: 100%;
+  padding: 4.5rem 0 2rem;
+
+}
+.container-pricing h1 {
+  letter-spacing: 1px;
+}
+.pricing-list {
+  border-radius: 100%;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 800px;
+  width: 100%;
+  height: 45vh;
+  color: black;
+}
+.pricing-list .item:hover {
+  transform: scale(1.1); 
+  z-index: 1;
+  transition-duration: .6s;
+}
+.pricing-list .item.profissional:hover {
+  transform: scale(1.1);
+  transition-duration: .6s;
+}
+.pricing-list .item {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  max-width: 280px;
+  padding: 10px 20px 15px 20px;
+  width: 100%;
+}
+.pricing-list .item strong {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pricing-list .item .pricing-prices {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.pricing-list .item .pricing-prices strong {
+  font-size: 40px;
+  margin: 0 5px;
+}
+.pricing-list .item.profissional {
+  background: #b81b1b;
+  border: 0;
+  box-shadow: inset 0px 20px 44px -13px rgba(0, 0, 0, 0.31);
+  color: #fff;
+  position: relative;
+  transform: scale(1.06);
+}
+.pricing-list .item.profissional .btn-start:hover {
+  background: #fff;
+  box-shadow: 2px 3px 43px 0px rgba(0, 0, 0, 0.42);
+  color: #b81b1b;
+}
+.pricing-list .item .btn-start:hover {
+  background: #b81b1b;
+  box-shadow: 2px 3px 43px 0px rgba(0, 0, 0, 0.42);
+  color: #fff;
+}
+.pricing-list .pricing-list-features-item {
+  align-items: center;
+  display: flex;
+  margin: 15px 0;
+
+/* botão*/
+
+}
+.botao{
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 30px 0;
+  background-color: #61616100;
+  border: 2px solid #616161;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.botao::before{
+  background: #616161;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.botao::before{
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.botao:hover::before{
+  height: 380%;
+}
+
+#subTitle{
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .pricing-list {
+    flex-wrap: wrap;
+  }
+  .pricing-list .item {
+      max-width: 100%;
+    }
+}

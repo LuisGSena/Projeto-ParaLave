@@ -1,0 +1,49 @@
+<head>
+    <title>Página de Pagamento</title>
+    <link rel="stylesheet" href="/style/pagamento.css">
+</head>
+
+<body class="corpo-pagamento">
+    <div class="cont">
+        <div class="container_payements">
+            <h1 class="pagar">Página de Pagamento</h1>
+            <form action="/realizarPagamento" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="valor">Valor a Pagar:</label>
+                <input type="number" id="valor" name="valor" min="1" readonly>
+
+                <label for="formaPagamento">Forma de Pagamento:</label>
+                <select id="formaPagamento" name="formaPagamento" required>
+                    <option value="boleto">Boleto</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="pix">PIX</option>
+                </select>
+
+                <div id="opcoesPagamento">
+                    <div id="boleto" class="opcaoPagamento">
+                        <p>Para pagamento via boleto, você receberá as instruções por e-mail.</p>
+                    </div>
+
+                    <div id="cartao" class="opcaoPagamento">
+                        <label for="numeroCartao">Número do Cartão:</label>
+                        <input type="text" id="numeroCartao" name="numeroCartao">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv">
+                        <label for="validade">Data de Validade:</label>
+                        <input type="text" id="validade" name="validade">
+                    </div>
+
+                    <div id="pix" class="opcaoPagamento">
+                        <p>Para pagamento via PIX, utilize a chave: <strong>washcar@gmail.com.br</strong></p>
+                    </div>
+                </div>
+                <input type="hidden" id="id_compra ">
+                <button type="submit">Pagar</button>
+            </form>
+        </div>
+    </div>
+    <script src="pagamento.js"></script>
+    <script src="redirecionamento.js"></script>
+</body>

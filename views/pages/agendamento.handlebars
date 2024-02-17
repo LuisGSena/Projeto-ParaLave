@@ -1,0 +1,58 @@
+<head>
+    <link rel="stylesheet" href="/style/agendamento.css">
+</head>
+<body class="corpo-agendamento">
+<main class="main">
+    <!--==================== HOME ====================-->
+    <section class="agendamento section">
+      <div class="agendamento_container container">
+
+        <img class="agendamento__img" src="/IMG/lavajatoempresa.png" alt="" />
+
+        <div class="agendamento__textos">
+          <h1 class="agendamento__titulo">Bem vindo ao {{empresa.RazaoSocial}}</h1>
+          <h3 class="agendamento__subtitulo">Seja bem vindo(a) ao lava-jato {{empresa.RazaoSocial}}, venha nos visitar estamos localizado no bairro {{empresa.bairro}}, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio minus ipsa expedita exercitationem eaque voluptate alias omnis velit, a illo inventore possimus sapiente maxime enim cupiditate optio ab ad debitis!</h3>
+          <h3 class="agendamento_subtitulo">Gostou dos nossos serviços? Dê seu feedback!</h3>
+          <ul class="avaliacao">
+            <li class="icone-estrela ativo" data-avaliacao="1"></li>
+            <li class="icone-estrela" data-avaliacao="2"></li>
+            <li class="icone-estrela" data-avaliacao="3"></li>
+            <li class="icone-estrela" data-avaliacao="4"></li>
+            <li class="icone-estrela" data-avaliacao="5"></li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="servico-section">
+        <h1 class="servico__titulo section">Nossos Serviços:</h1>
+        
+          <div class="cards-container">
+            <div class="servico__card">
+              <h3 class="servico__subtitulo">Lavagem de Exterior</h3>
+              <h3 class="servico__subtitulo">R$ 40,00</h3>
+              <input class="checkmark" type="checkbox" name="" id="">
+            </div>
+          </div>
+          <div class="cards-container">
+            <div class="servico__card">
+              <h3 class="servico__subtitulo">Lavagem de Interior</h3>
+              <h3 class="servico__subtitulo"> R$ 60,00</h3>
+              <input class="checkmark" type="checkbox" name="" id="">
+            </div>
+          </div>
+          <div class="cards-container">
+            <div class="servico__card">
+              <h3 class="servico__subtitulo">Limpeza de Tapetes</h3>
+              <h3 class="servico__subtitulo">R$ 35,00</h3>
+              <input class="checkmark" type="checkbox" name="" id="">
+            </div>
+          </div>
+          <div class="section">
+            <a href="/qrcode" class="agendamento__button container">Agendar</a>
+          </div>
+      </section>
+    </section>
+  </main>
+</body>
+
+  <script src="/js/agendamento.js"></script>

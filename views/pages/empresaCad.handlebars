@@ -1,0 +1,93 @@
+
+<head>
+    <link rel="stylesheet" href="/style/empresaCad.css">
+    <script src="/js/verifyEmprCad.js"></script>
+</head>
+<body class="corpo-empresa-cad">
+<div class="container">
+        <div class="form-image">
+            <img src="assets/img//undraw_shopping_re_3wst.svg" alt="">
+        </div>
+        <div class="form-group">
+            <form action="loginEmprAfterCad" method="post">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre sua Empresa</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome da Empresa:</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite a empresa" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Cnpj">CNPJ</label>
+                        <input id="Cnpj" type="Cnpj" name="Cnpj" placeholder="00.000.000/0000-00" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Razao">Razão Social</label>
+                        <input id="Razao" type="Razao" name="Razao" placeholder="Digite aqui" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Telefone</label>
+                        <input id="number" type="text" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Whatsapp </label>
+                        <input type="text" name="number_whatsapp" id="number_whatsapp" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="endereco">Cep</label>
+                        <input id="endereco" type="endereco" name="endereco" placeholder="00000-000" onblur="verificarcep()" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Bairro">Bairro</label>
+                        <input id="bairro" type="bairro" name="bairro" placeholder="Digite aqui" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Cidade">Cidade</label>
+                        <input id="Cidade" type="Cidade" name="Cidade" placeholder="Digite aqui" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Site">Site</label>
+                        <input id="Site" type="Site" name="Site" placeholder="Digite seu site" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Data de nascimento">Data de Abertura </label>
+                        <input id="date" type="data" name="data" placeholder="00/00/0000" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                    </div>
+
+                </div>
+
+                <div class="continue-button">
+                    <button style="font-size: 15px; color: white " type="submit">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+

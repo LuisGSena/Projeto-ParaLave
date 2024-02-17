@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    color: black;
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+.form-image{
+    width: 60%;
+    height: 100%;
+    padding: 1em;
+    background: url(../IMG/USUARIO.jpg);
+    background-size: cover;
+}
+
+.main-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #c44545;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+.input-box label, .gender-title h6 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000000c0;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    margin-top: 10px;
+}
+.input-box input{
+    margin: 0.6em 0;
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 1.3em;
+}
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+.input-box input:focus-visible {
+    outline: 1px solid #9b7272;
+}
+.input-box input::placeholder {
+    color: #000000be;
+}
+select {
+    margin: 0.8em 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 1.5em;
+}
+.input-box select:hover {
+    background-color: #eeeeee75;
+}
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    padding: .6em;
+
+}
+.gender-input {
+    font-size: 1.3em;
+}
+.gender-input input {
+    margin-right: 0.35rem;
+}
+.gender-input label {
+    font-weight: 700;
+    color: #000000c0;
+}
+.continue-button button{
+    width: 100%;
+    height: 5vh;
+    margin-top: 3em;
+    border: none;
+    background-color: #2c1919;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.continue-button button:hover{
+    transition: .5s;
+    background-color: #442b2b;
+}
+@media screen and (max-width: 1366px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}

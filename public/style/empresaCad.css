@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+.container {
+    color: black;
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+    width: 60%;
+    height: 100%;
+    padding: 1em;
+    background: url(../IMG/cadEmpr.jpg);
+    background-size: cover;
+}
+
+.form-image img {
+    width: 3rem;
+}
+
+.form-group {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: #fff;
+}
+
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    margin-top: 10px;
+}
+
+.input-box input {
+    margin: 0.6em 0;
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 1.3em;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+.input-box input:focus-visible {
+    outline: 1px solid #9b7272;
+}
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.input-box label, .gender-title h6 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button button{
+    width: 100%;
+    height: 5vh;
+    margin-top: 3em;
+    border: none;
+    background-color: #2c1919;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #2c1919;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+
+.modelo{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem; 
+}
+
+.Usuario:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+/* Estilos base */
+/* ... (seu código CSS existente) ... */
+
+/* Estilos para telas médias (max-width: 1330px) */
+@media screen and (max-width: 1330px) {
+    .form-image {
+        width: 0; /* Ocultar a imagem em telas médias */
+        padding: 0; /* Remover o espaço ocupado pela imagem */
+    }
+    .container {
+        width: 100%;
+    }
+    .form {
+        width: 100%;
+        padding: 2rem; /* Ajustar o espaçamento conforme necessário */
+    }
+}
+
+/* Estilos para telas pequenas (max-width: 1064px) */
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 1rem; /* Ajustar o espaçamento conforme necessário */
+        max-height: none; /* Remover a limitação de altura */
+        overflow-y: visible; /* Remover a rolagem vertical */
+        flex-wrap: wrap; /* Permitir a quebra de linha */
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+
+/* Estilo para o elemento com a classe "modelo" */
+.modelo {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+/* Estilo para a transformação no hover para a classe Usuario */
+.Usuario:hover {
+    transform: rotateZ(-30deg);
+    transition: transform 0.3s ease; /* Adicionar uma transição suave */
+}
